@@ -32,3 +32,5 @@
 编辑文章时图片代码格式：
 
      <div class="fluid"><img src="#" alt=""></div>
+    
+主题地址： https://lms.im/theme/typecho-simple-theme-himk.html
