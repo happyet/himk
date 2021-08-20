@@ -1,7 +1,7 @@
 <footer class="footer">
 	<div class="container">
     	<a title="登录后台" href="<?php $this->options->adminUrl(); ?>" style="margin-right:auto"><img src="<?php $this->options->themeUrl('/static/images/login.png'); ?>" alt="登录" /></a>
-		<p><a href="<?php $this->options->siteUrl('sitemap.xml'); ?>">SiteMap</a><br>Powered by <a href="https://www.typecho.org">Typecho)))</a>&nbsp;Theme by <a href="https://lms.im">LMS.im</a></p>
+		<p><a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a> &copy; <?php echo date("Y"); ?>  <a href="<?php $this->options->siteUrl('index.php/sitemap.xml'); ?>">SiteMap</a><br>Powered by <a href="https://www.typecho.org">Typecho)))</a>&nbsp;Theme by <a href="https://lms.im">LMS.im</a></p>
 	</div>
 </footer>
 <div class="goTop"><span id="top">上</span></div>
