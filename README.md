@@ -1,5 +1,5 @@
 # himk
-2 colums simple typecho theme
+双栏简洁自适应 typecho 主题
 
 ## 双栏简洁 typecho 主题 HIMK
 - 自适应
