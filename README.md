@@ -20,12 +20,12 @@
 
 后台 主题设置
 
-     &lt;li>&lt;a href="#">首页&lt;span>Homepage&lt;/span>&lt;/a>&lt;/li>
-     &lt;li>&lt;a href="#">关于&lt;span>About me&lt;/span>&lt;/a>&lt;/li>
-     &lt;li>&lt;a href="#">留言&lt;span>Guestbook&lt;/span>&lt;/a>&lt;/li>
+     <li><a href="#">首页<span>Homepage</span></a></li>
+     <li><a href="#">关于<span>About me</span></a></li>
+     <li><a href="#">留言<span>Guestbook</span></a></li>
 
 ### 文章宽屏图片格式
 
 编辑文章时图片代码格式：
 
-     &lt;div class="fluid">&lt;img src="#">&lt;/div>
+     <div class="fluid"><img src="#" alt=""></div>
