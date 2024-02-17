@@ -7,7 +7,7 @@ function themeConfig($form) {
     $form->addInput($blogFace);
     $blogDec = new Typecho_Widget_Helper_Form_Element_Text('blogDec', NULL, NULL, _t('一句话'), _t('显示在右侧头像作者名字下面的一句话，简明精要。'));
     $form->addInput($blogDec);
-    $blogMenu = new Typecho_Widget_Helper_Form_Element_textarea('blogMenu', NULL, NULL, _t('自定义导航菜单'), _t('按照固定格式添加修改：&lt;li&gt;&lt;a href="导航链接"&gt;导航中文名称&lt;span&gt;导航英文名称&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;'));
+    $blogMenu = new Typecho_Widget_Helper_Form_Element_Textarea('blogMenu', NULL, NULL, _t('自定义导航菜单'), _t('按照固定格式添加修改：&lt;li&gt;&lt;a href="导航链接"&gt;导航中文名称&lt;span&gt;导航英文名称&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;'));
     $form->addInput($blogMenu);
 
     $tencentQQ = new Typecho_Widget_Helper_Form_Element_Text('tencentQQ', NULL, NULL, _t('QQ:'), _t('你的QQ号码'));
@@ -128,10 +128,11 @@ $textarr = preg_split("/(<.*>)/U", $text, -1, PREG_SPLIT_DELIM_CAPTURE);
 $stop = count($textarr);
 for ($i = 0; $i < $stop; $i++) {
   $content = $textarr[$i];
-  if ((strlen($content) > 0) && ('<' != $content{0})) { 
+  if ((strlen($content) > 0) && ('<' != $content[0])) { 
     $content = str_replace($smilies_tag, $smilies_replace, $content);
   }
   $output .= $content;
 }
 return $output;
 }
+?>
